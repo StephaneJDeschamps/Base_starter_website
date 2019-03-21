@@ -1,0 +1,28 @@
+/* VARIABLES */
+
+/* FONT FACE */
+
+/* GLOBAL: balises, id et class appelées à plusieurs endroits */
+
+/* HEADER et NAV */
+
+/* MAIN */
+
+/* FOOTER et SMALL */
+
+/* RESPONSIVE */
+
+/* Extra small devices Phones */
+@media screen and (max-width:576px) {}
+
+/* small devices Phablet */
+@media screen and (max-width:768px) {}
+
+/* Small devices Tablet */
+@media screen and (min-width:768px) {}
+
+/* Medium devices Desktops */
+@media screen and (min-width:992px) {}
+
+/* Large devices Desktops */
+@media screen and (min-width:1200px) {}

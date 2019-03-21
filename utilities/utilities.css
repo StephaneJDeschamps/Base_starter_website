@@ -1,0 +1,323 @@
+/*!
+* utilities.css v2.0.1(march, 20 2018)
+* @author:
+* Stephane J Deschamps (github.com/StephaneJD/base_starter)
+* MIT License: https://github.com/StephaneJD/base_starter/blob/master/LICENSE
+*
+* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 (modified) | 20110126
+   License: none (public domain)
+ */
+
+/* -------- Content -------- */
+
+/* 
+1- Reset (modified)
+2- Global
+| - Box-sizing & Fonts
+| - Links
+| - Cursors & Carets
+| - 
+| - 
+
+3- Class
+| - 
+| - 
+*/
+
+/* ------------------------- */
+
+/* ********Reset CSS******** */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+/* add "dialog" */
+dialog,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+/* :before, :after == Readjusted for css3 (::before, ::after) */
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ------------------------- */
+
+/* ********Global*********** */
+
+/* Box-sizing & Fonts */
+* {
+  /* Adjustment of the box-sizing with border-box for all elements */
+  box-sizing: border-box;
+}
+
+html {
+  /* Adjustment of the font size so that 1rem = 10px */
+  font-size: 62.5%;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v18/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+body {
+  font-family: 'Roboto', Verdana, Arial, Helvetica, sans-serif;
+  /* Choice 'sans-serif' for a better visibility */
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+}
+
+/* Links */
+a,
+a:hover,
+a:visited,
+a:active {
+  /* No decoration */
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Cursors & Caret */
+button,
+[type="button"],
+[type="image"],
+[type="submit"],
+[type="reset"],
+[type="range"],
+[type="file"],
+[type="checkbox"],
+[type="radio"] {
+  cursor: pointer;
+}
+
+abbr,
+.cursor-help,
+[type="search"] {
+  cursor: help;
+}
+
+.no-cursor {
+  cursor: none;
+}
+
+.cursor-no-touch {
+  cursor: not-allowed;
+}
+
+.cursor-zoom-in {
+  cursor: zoom-in;
+}
+
+.cursor-zoom-out {
+  cursor: zoom-out;
+}
+
+.hidden-caret {
+  caret-color: transparent;
+}
+
+.adapt-caret {
+  /* Adjust the caret color to font color */
+  caret-color: auto;
+}
+
+/* Medias */
+img {
+  max-width: 100%;
+}
+
+/* Simples transitions */
+/* Apply to all changed properties */
+.fast-transition {
+  transition: all 0.5s;
+}
+
+.medium-transition {
+  transition: all 1.5s ease-in-out;
+}
+
+.slow-transition {
+  transition: all 2s ease-in-out 0.5s;
+}
+
+/* Margin */
+.container {
+  /* Allows to center the contents */
+  margin: 0 auto;
+}
+
+/* Clear */
+.clear::after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
+/* Text */
+.txt-left {
+  text-align: left;
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.txt-justify {
+  text-align: justify;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+/* hide-and-seek */
+.hidden {
+  visibility: hidden;
+}
+
+.visible {
+  visibility: visible;
+}
+
+/* à voir 
+
+permet d'avoir une fenêtre avec scrolling
+.autoscroll { overflow: auto;    }
+
+SVG-only 
+pointer-events: stroke;
+
+La propriété touch-action définit si une région donnée peut être manipulée par l'utilisateur
+grâce à des interactions tactiles
+(en déplaçant ou en zoomant) et comment cette interaction fonctionnera.
+touch-action: auto;
+
+*/
