@@ -1,4 +1,4 @@
-  <!-- ! db_connection.php v1.0.4 | MIT License | github.com/StephaneJD/base_starter  -->
+  <!-- ! db_connection.php v1.0.5 | MIT License | github.com/StephaneJDeschamps/base_starter_website  -->
 
 <?php include 'utilities/utilities.php';
 

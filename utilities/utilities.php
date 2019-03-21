@@ -1,4 +1,4 @@
-  <!-- ! utilities.php v1.0.2 | MIT License | github.com/StephaneJD/base_starter  -->
+  <!-- ! utilities.php v1.0.2 | MIT License | github.com/StephaneJDeschamps/base_starter_website  -->
 
 <?php
 

@@ -1,4 +1,4 @@
-/* ! utilities.js v1.0.2 | MIT License | github.com/StephaneJD/base_starter */
+/* ! utilities.js v1.0.3 | MIT License | github.com/StephaneJDeschamps/base_starter_website */
 'use strict'; // Mode strict du JavaScript
 
 /* Utilities functions */
@@ -20,7 +20,7 @@ function showImage(source) {
 }
 
 function initEvent(selector, event, hangler) {
-  document.querySelector(selector).addEventListener(event, handler);
+  document.querySelector(selector).addEventListener(event, hangler);
 }
 
 function saveDomStorage(name, data) {
