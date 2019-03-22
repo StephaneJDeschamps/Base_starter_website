@@ -1,8 +1,8 @@
 /*!
-* utilities.css v2.0.2(march, 21 2018)
+* CSS_utilities.css v2.1.0(march, 22 2018)
 * @author:
-* Stephane J Deschamps (github.com/StephaneJDeschamps/base_starter_website)
-* MIT License: https://github.com/StephaneJDeschamps/base_starter_website/blob/master/LICENSE
+* Stephane J Deschamps (github.com/StephaneJDeschamps/CSS_utilities) 
+* MIT License: https: //github.com/StephaneJDeschamps/CSS_utilities/blob/master/LICENSE
 *
 * http://meyerweb.com/eric/tools/css/reset/
    v2.0 (modified) | 20110126
@@ -13,14 +13,20 @@
 
 /* 
 1- Reset (modified)
-2- Global
+2- Global (content preferences and specified class)
 | - Box-sizing & Fonts
 | - Links
 | - Cursors & Carets
+| - Médias
+| - Transitions
+| - Textarea
+| - Text
+3- Miscellaneous (content specified class)
+| - Margin
+| - Clear
+| - Hide and seek
+| - Sroll
 | - 
-| - 
-
-3- Class
 | - 
 | - 
 */
@@ -160,7 +166,7 @@ table {
 
 /* ------------------------- */
 
-/* ********Global*********** */
+/* ********Global_preferences*********** */
 
 /* Box-sizing & Fonts */
 * {
@@ -261,20 +267,10 @@ img {
   transition: all 2s ease-in-out 0.5s;
 }
 
-/* Margin */
-.container {
-  /* Allows to center the contents */
-  margin: 0 auto;
-}
-
-/* Clear */
-.clear::after {
-  clear: both;
-  content: ".";
-  display: block;
-  height: 0;
-  line-height: 0;
-  visibility: hidden;
+/* Textarea */
+/* Allows to resize only Vertically */
+textarea {
+  resize: vertical;
 }
 
 /* Text */
@@ -298,6 +294,28 @@ img {
   font-weight: bold;
 }
 
+.italic {
+  font-style: italic;
+}
+
+/* ********Miscellaneous*********** */
+
+/* Margin */
+.container {
+  /* Allows to center the contents */
+  margin: 0 auto;
+}
+
+/* Clear */
+.clear::after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+}
+
 /* hide-and-seek */
 .hidden {
   visibility: hidden;
@@ -307,17 +325,8 @@ img {
   visibility: visible;
 }
 
-/* à voir 
-
-permet d'avoir une fenêtre avec scrolling
-.autoscroll { overflow: auto;    }
-
-SVG-only 
-pointer-events: stroke;
-
-La propriété touch-action définit si une région donnée peut être manipulée par l'utilisateur
-grâce à des interactions tactiles
-(en déplaçant ou en zoomant) et comment cette interaction fonctionnera.
-touch-action: auto;
-
-*/
+/* Scroll */
+.autoscroll {
+  /* allows to have a window with scrolling */
+  overflow: auto;
+}
