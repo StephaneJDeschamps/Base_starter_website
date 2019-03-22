@@ -1,5 +1,7 @@
 # base_starter_website
-My base_starter for make websites evolving over time ...
+
+My base_starter for make websites evolving over time...
+
 include:
  - Font Awesome (for icons).
  - db_connection (for database).
